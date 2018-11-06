@@ -1,3 +1,3 @@
-# WebExtension `browser` API Polyfill... for Webpack! [![Build Status](https://travis-ci.org/NaughtyMC/webextension-polyfill-for-webpack.svg?branch=master)](https://travis-ci.org/NaughtyMC/webextension-polyfill-for-webpack) [![npm version](https://badge.fury.io/js/webextension-polyfill-for-webpack.svg)](https://www.npmjs.com/package/webextension-polyfill-for-webpack)
+# WebExtension `browser` API Polyfill... for Webpack! [![Build Status](https://travis-ci.com/NaughtyMC/webextension-polyfill-for-webpack.svg?branch=master)](https://travis-ci.com/NaughtyMC/webextension-polyfill-for-webpack) [![npm version](https://badge.fury.io/js/webextension-polyfill-for-webpack.svg)](https://www.npmjs.com/package/webextension-polyfill-for-webpack)
 
 This library is forked from [webextension-polyfill](https://github.com/mozilla/webextension-polyfill) and modified to be used on Webpack builds for Chrome using ProvidePlugin.
