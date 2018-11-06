@@ -21,11 +21,7 @@ test("privacy API should support promises", async (t) => {
   const defaultValue = res.value;
   const newValue = !defaultValue;
   res = await callSettingAPI("set", {value: newValue});
-  if (navigator.userAgent.includes("Firefox/")) {
-    t.equal(res, true, "passwordSavingEnabled.set() resolves to true");
-  } else {
-    t.equal(res, undefined, "passwordSavingEnabled.set() resolves to a void value");
-  }
+  t.equal(res, undefined, "passwordSavingEnabled.set() resolves to a void value");
 
   res = await callSettingAPI("get", {});
   t.deepEqual(res, {
@@ -34,11 +30,7 @@ test("privacy API should support promises", async (t) => {
   }, "passwordSavingEnabled.get() resolves to the updated value");
 
   res = await callSettingAPI("clear", {});
-  if (navigator.userAgent.includes("Firefox/")) {
-    t.equal(res, true, "passwordSavingEnabled.clear() resolves to true");
-  } else {
-    t.equal(res, undefined, "passwordSavingEnabled.clear() resolves to a void value");
-  }
+  t.equal(res, undefined, "passwordSavingEnabled.clear() resolves to a void value");
 
   res = await callSettingAPI("get", {});
   t.deepEqual(res, {

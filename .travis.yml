@@ -20,7 +20,6 @@ script:
 sudo: required
 
 addons:
-  firefox: 'latest'
   chrome: 'stable'
 
 after_script: npm run publish-coverage
