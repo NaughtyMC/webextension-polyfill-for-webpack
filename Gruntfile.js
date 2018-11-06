@@ -76,13 +76,13 @@ module.exports = function(grunt) {
           plugins: [
             ["transform-es2015-modules-umd", {
               globals: {
-                "webextension-polyfill": "browser",
+                "webextension-polyfill-for-webpack": "browser",
               },
               exactGlobals: true,
             }],
           ],
           sourceMap: true,
-          moduleId: "webextension-polyfill",
+          moduleId: "webextension-polyfill-for-webpack",
         },
         files: {
           "dist/browser-polyfill.js": "dist/browser-polyfill.js",

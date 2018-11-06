@@ -1,21 +1,21 @@
 {
-  "name": "webextension-polyfill",
+  "name": "webextension-polyfill-for-webpack",
   "version": "0.3.1",
-  "description": "A lightweight polyfill library for Promise-based WebExtension APIs in Chrome.",
+  "description": "A lightweight polyfill library for Promise-based WebExtension APIs in Chrome for use with ProvidePlugin",
   "main": "dist/browser-polyfill.js",
   "files": [
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mozilla/webextension-polyfill.git"
+    "url": "git+https://github.com/mozilla/webextension-polyfill-for-webpack.git"
   },
-  "author": "Mozilla",
+  "author": "NaughtyMC",
   "license": "MPL-2.0",
   "bugs": {
-    "url": "https://github.com/mozilla/webextension-polyfill/issues"
+    "url": "https://github.com/mozilla/webextension-polyfill-for-webpack/issues"
   },
-  "homepage": "https://github.com/mozilla/webextension-polyfill",
+  "homepage": "https://github.com/mozilla/webextension-polyfill-for-webpack",
   "devDependencies": {
     "async-wait-until": "^1.1.5",
     "babel-core": "^6.26.3",
