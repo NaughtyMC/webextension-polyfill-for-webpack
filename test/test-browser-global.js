@@ -12,20 +12,6 @@ describe("browser-polyfill", () => {
     });
   });
 
-  it("does not override the global browser namespace if it already exists", () => {
-    const fakeChrome = {
-      runtime: {lastError: null},
-    };
-    const fakeBrowser = {
-      mycustomns: {mybrowserkey: true},
-    };
-
-    return setupTestDOMWindow(fakeChrome, fakeBrowser).then(window => {
-      deepEqual(window.browser, fakeBrowser,
-                "The existing browser has not been wrapped");
-    });
-  });
-
   describe("browser wrapper", () => {
     it("supports custom properties defined using Object.defineProperty", () => {
       const fakeChrome = {};
